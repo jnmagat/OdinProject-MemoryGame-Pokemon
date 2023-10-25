@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body{
+  background-image: url('https://i.pinimg.com/originals/3f/ea/cf/3feacfa69c2cb52991d4f21d2e61aa4e.jpg');
+}
+
+.cardContainer{
+  margin: 50px;
+  padding: 10px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+img{
+  width: 150px;
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.cards.flipping{
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f7705ec-8c49-4eed-a56e-c21f3985254c/dah43cy-a8e121cb-934a-40f6-97c7-fa2d77130dd5.png/v1/fit/w_750,h_1040/pokemon_card_backside_in_high_resolution_by_atomicmonkeytcg_dah43cy-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyMCIsInBhdGgiOiJcL2ZcLzRmNzcwNWVjLThjNDktNGVlZC1hNTZlLWMyMWYzOTg1MjU0Y1wvZGFoNDNjeS1hOGUxMjFjYi05MzRhLTQwZjYtOTdjNy1mYTJkNzcxMzBkZDUucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.9GzaYS7sd8RPY5FlHca09J9ZQZ9D9zI69Ru-BsbkLDA'); 
+  animation-name: example;
+  animation-duration: 2s;
+  opacity: 1;
+}
+  
+.cards.flipping img,.cards.flipping h2 {
+  opacity: 0;
+}
+.cards{
+  width: 150px;
+  height: 250px;
+  flex-direction: column;
+  color: rgb(95, 95, 95);
+  padding:50px;
+  margin: 5px;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 1px 10px 10px rgba(1, 1, 1, 0.5);
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f372c63-efbc-41ec-83a6-41071f5fe815/d2o18w9-c5ee20de-41f2-4976-aa4d-584d2a086723.png/v1/fill/w_750,h_1050/trading_card_template_front_by_blackcarrot1129_d2o18w9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA1MCIsInBhdGgiOiJcL2ZcLzNmMzcyYzYzLWVmYmMtNDFlYy04M2E2LTQxMDcxZjVmZTgxNVwvZDJvMTh3OS1jNWVlMjBkZS00MWYyLTQ5NzYtYWE0ZC01ODRkMmEwODY3MjMucG5nIiwid2lkdGgiOiI8PTc1MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YPG1rewA73kT7CaJhHDrK2ZvWMaFB26P47SDw2bPOwA');
+}
+.cards img,.cards h2 {
+  opacity: 1;
+}
+
+.gameOver{
+  text-align: center;
+  width: 100vh;
+  position:fixed;
+  top: 30%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.gameOver button {
+  padding: 20px;
+  border: none;
+  border-radius: .5em;
+  background-color: blue;
+  color: yellow;
+  font-size: large;
+  font-weight: bolder;
+}
+
+.scoreBoard{
+  text-align: center;
+  background-color: rgba(1, 1, 1, 0.5);
+  color: white;
+  padding: 20px;
+  margin: 10px;
+}
